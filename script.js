@@ -231,7 +231,7 @@ function tagged() {
 //DANCETAB
 function dance(){
     console.log(dancecounter)
-    document.getElementById('theman').style.backgroundImage = "url('NAPOLEON/"+dancecounter+".gif')"
+    document.getElementById('theman').style.backgroundImage = "url('napoleon/"+dancecounter+".gif')"
     console.log(document.getElementById('theman').style.backgroundImage)
     dancecounter += 2
     dancescore += multiplier
