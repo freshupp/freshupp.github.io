@@ -1,44 +1,273 @@
 <!doctype html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <title>Document</title>
-    <link rel="stylesheet" type="text/css" href="styles.css">
-  </head>
-  <body>
-    <div class="all">
-      <div class="flex1">
-        <div class="header-flex1a">
-          <div class="flex2">
-            <div class="home-flex2a">Home</div>
-            <div class="flex2b">
-              <div class="flex3">
-                <div class="Uselessweb-flex3a">Grayson's Useless Website</div>
-                <div class="navigation-flex3b">
-                  <div class="flex4">
-                    <div class="flex4a minihover">Housing Tier List</div>
-                    <div class="flex4b minihover">Grayocache</div>
-                    <div class="flex4c minihover">Penguins</div>
-                    <div class="flex4d minihover">Surprise</div>
-                    <div class="flex4e minihover">Parkour</div>
-                  </div>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div id="all" class="all">
+        <div id='mainflex' class="mainflex">
+            <div id='header' class="header">
+                <div class="headerflex">
+                    <div id="homebutton" onclick="show('homebody', 'homebutton')" class="homebutton">
+                        Home
+                    </div>
+
+                    <div class="navntitle">
+                        <div class="navntitleflex">
+                            <div class="title">Grayson's Useless Website</div>
+                            <div class="buttonrow">
+                                <div class="buttonrowflex">
+                                    <div id="button1" onclick="show('page1','button1')" class="button1 minihover">
+                                        Duck Translator
+                                    </div>
+                                    <div id="button2" onclick="show('page2','button2')" class="button2 minihover">
+                                        Tag
+                                    </div>
+                                    <div id="button3" onclick="show('page3','button3')" class="button3 minihover">
+                                        Penguins
+                                    </div>
+                                    <div id="button4" onclick="show('page4','button4')" class="button4 minihover">
+                                        Surprise
+                                    </div>
+                                    <div id="button5" onclick="show('page5','button5')" class="button5 minihover">
+                                        Super Cool Button
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-              </div>
             </div>
-          </div>
-        </div>
-        <div class="body-flex1b">
-          <div class="body-flex5">
-            <div class="Grayson-flex5a">
-              <div class="Grayson-flex6">
-                <div class="Graysonname-flex6a">GRAYSON!!!</div>
-                <div class="Picture-flex6b"></div>
-              </div>
+            <!-- HOME BODY SECTION -->
+            <div id="homebody" class="homebody">
+                <div class="bodyflex">
+                    <div class="Graysonrow">
+                        <div class="Graysonrowflex">
+                            <div class="Graysonname">GRAYSON!!!</div>
+                            <div id="fantasticpicture"onclick="ballballball()"class="picture"></div>
+                        </div>
+                    </div>
+                    <div class="homebodytext">
+                        Hi my name is Grayson. I'm 18 years old, and I'm a freshman at
+                        Southern Virginia University. I am on the swim team, I like to
+                        read and listen to podcasts, and I like being outside. I'm a
+                        business and computer science major. Click my picture to see my favorite superhero.
+                    </div>
+                </div>
             </div>
-            <div class="bodybody-flex5b">Hi my name is Grayson. I'm 18 years old, and I'm a freshman at Southern Virginia University. I am on the swim team, I like to read and listen to podcasts, and I like being outside. I'm a business and computer science major.</div>
-          </div>
+
+
+            <!-- DUCKS -->
+            <div id="page1" style="display: none" class="duckbody">
+                <div class="ducknprompt">
+                    <div id="duckprompt" class="duckprompt">INPUT YOUR TEXT FOR TRANSLATION</div>
+                    <div id="duck" class="duck"></div>
+                    <div id="inputnbutton" class="inputnbutton">
+                        <input type="text" class="duckinput" id="duckinput"></input>
+                        <div onclick="submittranslate()" id="duckconfirm" class="duckconfirm">TRANSLATE!</div>
+                    </div>
+                </div>
+            </div>
+
+            <!--TAG-->
+            <div id="page2" style="display: none" class="tagbody">
+                <div id="tagbot" onclick="tagged()" onmouseover="weave()" class="tagbot"></div>
+                <div id="taunt" class="taunt">'You won't hit me, punk'</div>
+                <div id="scoreboard" class="scoreboard">Score: 0</div>
+            </div>
+
+            <!--PENGUINS, text from ai-->
+            <div id="page3" style="display: none" class="penguinbody">
+                <div id="penguinflexcontainer" class="penguinflexcontainer">
+                    <div class="pengrow1">Penguins (Order: Sphenisciformes)
+                        Family: Spheniscidae
+                        Penguins are a group of flightless seabirds endemic to the Southern Hemisphere, with the
+                        exception of the Galápagos penguin (Spheniscus mendiculus), which resides just north of the
+                        equator. There are approximately 18 recognized species, varying widely in size, habitat, and
+                        behavioral adaptations. These birds are highly specialized for life in the water, with
+                        streamlined bodies, strong flippers, and dense, waterproof feathers.
+                        Penguins evolution is thought to have begun approximately 60 million years ago, shortly
+                        after
+                        the mass extinction event that ended the reign of non-avian dinosaurs. The fossil record
+                        indicates that early penguin species, such as Waimanu manneringi, retained some primitive
+                        features but already exhibited adaptations for diving. Over time, penguins lost their
+                        ability to
+                        fly and became proficient swimmers, occupying a niche once held by marine reptiles.
+                        The diet of penguins consists primarily of small fish, squid, and crustaceans. Species like
+                        the
+                        Adélie penguin (Pygoscelis adeliae) feed heavily on krill, while emperor penguins hunt in
+                        deeper
+                        waters. Their prey is captured via pursuit diving — a method requiring rapid, precise
+                        movement
+                        underwater, facilitated by their powerful pectoral muscles and flipper structure.
+                        Penguins typically breed in large colonies, with nesting behaviors ranging from simple
+                        ground
+                        scrapes to burrows dug in soil or guano. Emperor penguins are unique in their breeding
+                        cycle,
+                        nesting during the Antarctic winter. After laying a single egg, the female transfers it to
+                        the
+                        male, who incubates it for two months in harsh sub-zero conditions without feeding. Upon the
+                        female’s return, the male, often having lost half his body weight, returns to the sea to
+                        feed.
+                        Each species exhibits unique vocalizations, with calls adapted to be heard over the din of
+                        densely populated rookeries. Penguins can recognize their mates and offspring through vocal
+                        signatures. They also rely on body language, with certain flipper gestures and posture
+                        changes
+                        indicating courtship, aggression, or submission.
+                        Molting occurs once a year in a phase called the "catastrophic molt," during which penguins
+                        shed
+                        all their feathers and grow new ones. During this period, they remain ashore and fast,
+                        relying
+                        on stored fat reserves. Their feathers are exceptionally dense—over 100 feathers per square
+                        inch—and trap a layer of insulating air when submerged.
+                        Studies into penguin physiology reveal remarkable cold adaptations. Their circulatory
+                        systems
+                        are optimized to retain heat through countercurrent heat exchange in their flippers and
+                        legs.
+                        Their eyes have adapted to see clearly both above and below water, with lenses that
+                        compensate
+                        for the refractive differences in air and sea.
+                        The magnetic sense in penguins, while still under investigation, is believed to play a role
+                        in
+                        long-distance navigation. Controlled experiments have demonstrated an ability to detect
+                        shifts
+                        in geomagnetic fields. Some researchers have noted irregular migratory deviations coinciding
+                        with geomagnetic anomalies, though these events are poorly understood.
+
+
+                    </div>
+                    <div class="pengrow2">
+                        <div class="pengdivider1">
+                            In 2013, a breeding colony of chinstrap penguins in the South Orkney Islands exhibited
+                            nonstandard navigational behavior following an intense geomagnetic storm. Several
+                            hundred
+                            individuals migrated northward into inhospitable zones and were later found in a
+                            vegetative
+                            torpor along the coastline, facing the same direction. No signs of illness or trauma
+                            were
+                            detected.
+                            Anomalous morphological traits have been catalogued on a limited basis. In 2018, a team
+                            from
+                            the Institute for Cryobiological Fauna reported observing an emperor penguin displaying
+                            vestigial digitiform extensions at the tip of each flipper, exhibiting prehensile
+                            capability. The specimen was not successfully relocated for tagging.
+                            There are references in older expedition logs to what have been described as "circlet
+                            behaviors": mass gatherings of penguins forming concentric formations, flapping
+                            rhythmically, often around a central individual who remains entirely still. These
+                            observations were historically dismissed as apocryphal, though similar accounts have
+                            emerged
+                            from modern automated drone footage, particularly during periods of sustained auroral
+                            activity.
+                            The neural architecture of penguins shows high development in regions associated with
+                            pattern recognition, auditory processing, and orientation. However, some recent
+                            dissections
+                            of deceased long-lived specimens have revealed unusual nodular formations along the
+                            corpus
+                            callosum. These nodules are phosphorescent under certain wavelengths and possess a faint
+                            residual magnetism post-mortem.
+
+                        </div>
+                        <div class="pengdivider2">
+                        </div>
+                    </div>
+                    <div class="pengrow3">
+                        Unexplained behaviors have been observed in subterranean ice systems, particularly near
+                        geothermal vents. Researchers operating in borehole-stationed observatories near the Ross
+                        Ice
+                        Shelf documented a period of silence across four penguin colonies simultaneously, lasting 49
+                        hours. No cause for the sudden inactivity was found, though audio logs revealed a deep,
+                        rhythmic
+                        thrum beneath ambient noise, measurable only through spectrographic filtering. The colonies
+                        resumed activity in perfect unison at 04:00 UTC.
+                        In a controversial paper later retracted, biologist L.H. Benslow proposed that penguins may
+                        exhibit a form of “distributed cognition,” communicating not through language or signals,
+                        but
+                        through synchronized neurological resonance mediated by their environment. The concept was
+                        rejected by mainstream ornithology due to its speculative nature and lack of repeatable
+                        data.
+                        Despite these anomalies, penguins remain a critical component of marine ecosystems. Their
+                        populations are considered environmental indicators, with shifts in breeding success,
+                        migration,
+                        and diet composition reflecting larger changes in oceanic health. Conservation efforts have
+                        focused on protecting breeding grounds and reducing fishing competition.
+                        Recent satellite imagery has identified previously undocumented movement patterns among king
+                        penguin colonies, forming hexagonal migration paths not influenced by terrain or food
+                        availability. Thermal imaging suggests these formations generate a localized drop in
+                        atmospheric
+                        temperature during synchronized flipper extension. Further analysis is ongoing.
+                        A declassified 1972 Argentine naval report references an incident involving “avian perimeter
+                        coordination” near a submerged magnetic anomaly east of Graham Land. A squadron of
+                        reconnaissance personnel noted thousands of penguins arrayed in radial symmetry around a
+                        spiraling fissure in the ice. The ice was later found to have formed over oceanic basalt
+                        columns
+                        arranged in a 24-sided tessellation.
+                        To date, there is no known explanation for the ongoing “white-eye phenomenon” recorded in
+                        three
+                        separate colonies: penguins with dilated, unresponsive pupils and complete retinal bleach,
+                        continuing to engage in normal behavior except for an inability to avoid direct collision
+                        with
+                        observers. The phenomenon occurs exclusively during periods of lunar eclipse.
+                        Though scientific consensus remains inconclusive, it is now widely recommended that field
+                        teams
+                        operating near magnetic deviation zones limit time spent observing coordinated penguin
+                        gatherings. If low-frequency humming is heard, teams are to maintain visual contact with
+                        team
+                        members, deactivate all electronic devices, and refrain from forming circular patterns.
+                        Further field study is ongoing. Archives sealed in 1991 under the International Marine
+                        Faunal
+                        Accord are scheduled for declassification in 2027.
+                        Until then, avoid the silent ones. Do not record their silence. Do not stand in the center.
+
+
+
+
+                    </div>
+                    <div id="penguinguy" class="penguinguy"></div>
+                </div>
+            </div>
+
+            <!--SURPRISE-->
+            <div id="page4" style="display: none" class="dancebody">
+
+                <div id = "dancecontainer" class="dancecontainer">
+                    <div class = "increasescore" id = "increasescore">
+                        <div class = "increasescorecontainer" id = "increasescorecontainer">
+                            <div class = "actuallyincreasescore" id = "actuallyincreasescore">Increase Power by 1: 20 points</div>
+                            <div onclick="purchase()"class = "increasescoreconfirm" id = "increasescoreconfirm">PURCHASE</div>
+                        </div>
+                    </div>
+                    <div class = "randobox" id = "randobox">
+                        <div class = "themancontainer" id = "themancontainer">
+                            <div class = "theman" id = "theman"></div>
+                            <div onclick="dance()"class = "dancebutton" id = "dancebutton">DANCE!</div>
+
+                        </div>
+
+                    </div>
+                    <div class = "dancescore" id = "dancescore">Current Score: 0 <br> <br> Dancepower: 1</div>
+                </div>
+            </div>
+
+
+
+
+            <!--JAMMING-->
+            <div id="page5" style="display: none" class="bouncebody">
+                <div id=ball class="hide"></div>
+                <div id='songbutton' onclick="playsong()" class="songbutton">PRESS ME</div>
+                <img src="images/kermitdance.gif" id="kermitdance" class="hide">
+                <img src="images/gru.gif" id="grudance" class="hide">
+
+
+
+
+            </div>
         </div>
-      </div>
-    </div>
-  </body>
+        <script src="script.js"></script>
+</body>
+
 </html>
