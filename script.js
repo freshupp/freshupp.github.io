@@ -143,7 +143,7 @@ function hidetaunt() {
     document.getElementById('taunt').className = 'hide'
 }
 function backtoneutral() {
-    tagbot.style.backgroundImage = "url('IMAGES/neutral_face.png')"
+    tagbot.style.backgroundImage = "url('images/neutral_face.png')"
 }
 function weave() {
     document.getElementById('taunt').className = 'hide'
@@ -155,28 +155,28 @@ function weave() {
     if ((misstracker % 5) === 1) {
         var decidetaunt = Math.floor(Math.random() * 7)
         if (decidetaunt === 1) {
-            tagbot.style.backgroundImage = "url('IMAGES/surfer.png')"
+            tagbot.style.backgroundImage = "url('images/surfer.png')"
             setTimeout(backtoneutral, 500)
             dodge.play()
         }
         if (decidetaunt === 2) {
-            tagbot.style.backgroundImage = "url('IMAGES/stuck_out_tongue.png')"
+            tagbot.style.backgroundImage = "url('images/stuck_out_tongue.png')"
             setTimeout(backtoneutral, 500)
             laugh.currentTime = .2
             laugh.play()
         }
         if (decidetaunt === 3) {
-            tagbot.style.backgroundImage = "url('IMAGES/grin.png')"
+            tagbot.style.backgroundImage = "url('images/grin.png')"
             setTimeout(backtoneutral, 500)
             peter.play()
         }
         if (decidetaunt === 4) {
-            tagbot.style.backgroundImage = "url('IMAGES/sunglasses.png')"
+            tagbot.style.backgroundImage = "url('images/sunglasses.png')"
             setTimeout(backtoneutral, 500)
             mmm.play()
         }
         if (decidetaunt === 5) {
-            tagbot.style.backgroundImage = "url('IMAGES/surfer.png')"
+            tagbot.style.backgroundImage = "url('images/surfer.png')"
             setTimeout(backtoneutral, 500)
             dodge.play()
         }
@@ -223,7 +223,7 @@ function tagged() {
 
     slap.currentTime = .1
     slap.play()
-    tagbot.style.backgroundImage = "url('IMAGES/dizzy_face.png')"
+    tagbot.style.backgroundImage = "url('images/dizzy_face.png')"
     setTimeout(backtoneutral, 500)
 
 }
@@ -285,7 +285,7 @@ pengwinheight = document.documentElement.scrollHeight;
 if (windowheight + ydistance >= pengwinheight && document.getElementById('page3').style.display=='block') {    
     console.log('success')
     setTimeout(() => {
-        document.getElementById('penguinguy').style.backgroundImage = "url('IMAGES/penguinengry2.png')"
+        document.getElementById('penguinguy').style.backgroundImage = "url('images/penguinengry2.png')"
         getout.currentTime = .2
         getout.play()
     }, 500);
@@ -299,7 +299,7 @@ if (windowheight + ydistance >= pengwinheight && document.getElementById('page3'
         });
     }, 500);
     setTimeout(() => {
-        document.getElementById('penguinguy').style.backgroundImage = "url('IMAGES/penguinshower.png')"
+        document.getElementById('penguinguy').style.backgroundImage = "url('images/penguinshower.png')"
     }, 1000);
 
 
