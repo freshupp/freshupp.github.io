@@ -1,13 +1,13 @@
 var score = 0
 var misstracker = 0
 const tagbot = document.getElementById('tagbot')
-const slap = new Audio('AUDIO/slap-oh_LGvkhyt.mp3')
-const dodge = new Audio('AUDIO/weave.mp3')
-const laugh = new Audio('AUDIO/funny_82hiegE.mp3');
-const peter = new Audio('AUDIO/laugh-3_9wVKqU7.mp3');
-const mmm = new Audio('AUDIO/mmm-6.mp3');
-const getout = new Audio('AUDIO/tuco-get-out_GUkoo8V.mp3')
-const aintthatfantastic = new Audio('AUDIO/aintthatfantastic.mp3')
+const slap = new Audio('audio/slap-oh_LGvkhyt.mp3')
+const dodge = new Audio('audio/weave.mp3')
+const laugh = new Audio('audio/funny_82hiegE.mp3');
+const peter = new Audio('audio/laugh-3_9wVKqU7.mp3');
+const mmm = new Audio('audio/mmm-6.mp3');
+const getout = new Audio('audio/tuco-get-out_GUkoo8V.mp3')
+const aintthatfantastic = new Audio('audio/aintthatfantastic.mp3')
 
 var translation = ''
 var tcount = 0
@@ -337,7 +337,7 @@ function postplay() {
     document.getElementById('songbutton').className = 'hide'
     document.getElementById('kermitdance').className = 'kermitdance'
 }
-const song = new Audio('AUDIO/feelit.mp3');
+const song = new Audio('audio/feelit.mp3');
 var ball = document.getElementById('ball')
 function playsong() {
     song.play()
