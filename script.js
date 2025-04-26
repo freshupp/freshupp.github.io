@@ -1,13 +1,13 @@
 var score = 0
 var misstracker = 0
 const tagbot = document.getElementById('tagbot')
-const slap = new Audio('audio/slap-oh_LGvkhyt.mp3')
-const dodge = new Audio('audio/weave.mp3')
-const laugh = new Audio('audio/funny_82hiegE.mp3');
-const peter = new Audio('audio/laugh-3_9wVKqU7.mp3');
-const mmm = new Audio('audio/mmm-6.mp3');
-const getout = new Audio('audio/tuco-get-out_GUkoo8V.mp3')
-const aintthatfantastic = new Audio('audio/aintthatfantastic.mp3')
+const slap = new Audio('AUDIO/slap-oh_LGvkhyt.mp3')
+const dodge = new Audio('AUDIO/weave.mp3')
+const laugh = new Audio('AUDIO/funny_82hiegE.mp3');
+const peter = new Audio('AUDIO/laugh-3_9wVKqU7.mp3');
+const mmm = new Audio('AUDIO/mmm-6.mp3');
+const getout = new Audio('AUDIO/tuco-get-out_GUkoo8V.mp3')
+const aintthatfantastic = new Audio('AUDIO/aintthatfantastic.mp3')
 
 var translation = ''
 var tcount = 0
@@ -58,6 +58,11 @@ function ballballball(){
 }
 
 function reseteverything() {
+
+
+    document.documentElement.style.overflow = 'visible';
+
+
     song.currentTime = 0
     song.pause()
     aintthatfantastic.currentTime=0
@@ -143,7 +148,7 @@ function hidetaunt() {
     document.getElementById('taunt').className = 'hide'
 }
 function backtoneutral() {
-    tagbot.style.backgroundImage = "url('images/neutral_face.png')"
+    tagbot.style.backgroundImage = "url('IMAGES/neutral_face.png')"
 }
 function weave() {
     document.getElementById('taunt').className = 'hide'
@@ -155,28 +160,28 @@ function weave() {
     if ((misstracker % 5) === 1) {
         var decidetaunt = Math.floor(Math.random() * 7)
         if (decidetaunt === 1) {
-            tagbot.style.backgroundImage = "url('images/surfer.png')"
+            tagbot.style.backgroundImage = "url('IMAGES/surfer.png')"
             setTimeout(backtoneutral, 500)
             dodge.play()
         }
         if (decidetaunt === 2) {
-            tagbot.style.backgroundImage = "url('images/stuck_out_tongue.png')"
+            tagbot.style.backgroundImage = "url('IMAGES/stuck_out_tongue.png')"
             setTimeout(backtoneutral, 500)
             laugh.currentTime = .2
             laugh.play()
         }
         if (decidetaunt === 3) {
-            tagbot.style.backgroundImage = "url('images/grin.png')"
+            tagbot.style.backgroundImage = "url('IMAGES/grin.png')"
             setTimeout(backtoneutral, 500)
             peter.play()
         }
         if (decidetaunt === 4) {
-            tagbot.style.backgroundImage = "url('images/sunglasses.png')"
+            tagbot.style.backgroundImage = "url('IMAGES/sunglasses.png')"
             setTimeout(backtoneutral, 500)
             mmm.play()
         }
         if (decidetaunt === 5) {
-            tagbot.style.backgroundImage = "url('images/surfer.png')"
+            tagbot.style.backgroundImage = "url('IMAGES/surfer.png')"
             setTimeout(backtoneutral, 500)
             dodge.play()
         }
@@ -223,7 +228,7 @@ function tagged() {
 
     slap.currentTime = .1
     slap.play()
-    tagbot.style.backgroundImage = "url('images/dizzy_face.png')"
+    tagbot.style.backgroundImage = "url('IMAGES/dizzy_face.png')"
     setTimeout(backtoneutral, 500)
 
 }
@@ -231,7 +236,7 @@ function tagged() {
 //DANCETAB
 function dance(){
     console.log(dancecounter)
-    document.getElementById('theman').style.backgroundImage = "url('napoleon/"+dancecounter+".gif')"
+    document.getElementById('theman').style.backgroundImage = "url('NAPOLEON/"+dancecounter+".gif')"
     console.log(document.getElementById('theman').style.backgroundImage)
     dancecounter += 2
     dancescore += multiplier
@@ -285,7 +290,7 @@ pengwinheight = document.documentElement.scrollHeight;
 if (windowheight + ydistance >= pengwinheight && document.getElementById('page3').style.display=='block') {    
     console.log('success')
     setTimeout(() => {
-        document.getElementById('penguinguy').style.backgroundImage = "url('images/penguinengry2.png')"
+        document.getElementById('penguinguy').style.backgroundImage = "url('IMAGES/penguinengry2.png')"
         getout.currentTime = .2
         getout.play()
     }, 500);
@@ -299,7 +304,7 @@ if (windowheight + ydistance >= pengwinheight && document.getElementById('page3'
         });
     }, 500);
     setTimeout(() => {
-        document.getElementById('penguinguy').style.backgroundImage = "url('images/penguinshower.png')"
+        document.getElementById('penguinguy').style.backgroundImage = "url('IMAGES/penguinshower.png')"
     }, 1000);
 
 
@@ -337,7 +342,7 @@ function postplay() {
     document.getElementById('songbutton').className = 'hide'
     document.getElementById('kermitdance').className = 'kermitdance'
 }
-const song = new Audio('audio/feelit.mp3');
+const song = new Audio('AUDIO/feelit.mp3');
 var ball = document.getElementById('ball')
 function playsong() {
     song.play()
@@ -345,6 +350,8 @@ function playsong() {
     document.getElementById('songbutton').className = 'songbutton songdash'
     setTimeout(postplay, 4500);
     setTimeout(showgru, 14000);
+    document.documentElement.style.overflow = 'hidden'; // https://developer.mozilla.org/en-US/docs/Web/API/Document/documentElement
+    
 
 
     // setTimeout(20000)
