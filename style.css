@@ -270,7 +270,7 @@ font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 flex:3;
 border: solid rgb(201, 41, 41) 0px;
 margin:.5%;
-background-image: url(IMAGES/duck.png);
+background-image: url(images/duck.png);
 background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -329,7 +329,7 @@ background-color: #E07A3F;
   height: 50px;
   width: 50px;
   padding: 5px;
-  background-image: url(IMAGES/neutral_face.png);
+  background-image: url(images/neutral_face.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -541,7 +541,7 @@ background: #F4A261;
 }
 .pengdivider2{
   flex:1;
-  background-image:  url(IMAGES/penguin.jpg);
+  background-image:  url(images/penguin.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -550,7 +550,7 @@ background: #F4A261;
 
 .penguinguy{
   flex:1;
-  background-image:url(IMAGES/penguinshower.png);
+  background-image:url(images/penguinshower.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
