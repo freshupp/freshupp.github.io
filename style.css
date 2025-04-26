@@ -1,5 +1,8 @@
 html {
   height: 100%;
+  background-color: #D8E3F0;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
 }
 
 body {
@@ -8,132 +11,836 @@ body {
   margin: 0;
 }
 
-.all {
-  height: 100%;
+.hide {
+  display: none;
 }
 
-.flex1 {
+.all {
+  height: 100%;
+
+}
+
+/*HOME PAGE(kinda)----------------------------------*/
+
+.mainflex {
   height: 100%;
   display: flex;
   flex-direction: column;
+  border: solid red 0px;
+  /* overflow: hidden; */
 }
-.header-flex1a {
+
+.homebody {
+  flex: 6;
+  border: solid blue 0px;
+  margin: 2px;
+}
+
+.header {
   flex: 2;
   border: solid red 0px;
   margin: 2px;
 }
-.body-flex1b {
-  flex: 6;
-  border: solid blue;
-  margin: 2px;
-}
 
-.flex2{
+.headerflex {
   height: 100%;
   display: flex;
   flex-direction: row;
+  border-bottom: solid black 1px;
 }
 
-.home-flex2a{
-  flex:1;
-  color:white;
-  background:brown;
-  border-radius: 50px;
+.homebutton {
+  flex: 1;
+  color: white;
+  background: #264653;
+  border: solid #264653 5px;
+  border-radius: 100%;
   margin: 2px;
-  text-align:center;
-  padding-top: 2%
+  text-align: center;
+  font-size: 150%;
+  padding-top: 5%;
+  font-weight: bold;
+  transition:1s;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  background-size: 100%;
+  cursor:pointer;
+
+
 }
-.home-flex2a:hover{
-  flex:1;
-  color:white;
-  background:darkred;
-  border-radius: 50px;
+
+.homebutton:hover {
+  flex: 1;
+  color: white;
+  /* background:#1E3842; */
+  background-image: url(images/snoop.gif);
+  border: solid #264653 5px;
+  border-radius: 100%;
   margin: 2px;
-  text-align:center;
-  padding-top: 2%
+  text-align: center;
+  font-size: 150%;
+  padding-top: 5%;
+  font-weight: bold;
+  
 }
-.flex2b{
-  flex:4;
-  border: 0px;
+
+.buttonselected {
+  background: #6C9F8A;
+  flex: 1;
+  border: solid #81B29A 5px;
+  margin: 2px;
+  flex:1.2;
+
+}
+
+.navntitle {
+  flex: 4;
+  border: solid black 0px;
   margin: 2px;
 }
-.flex3{
-  display:flex;
-  height:100%;
-  flex-direction:column
+
+.navntitleflex {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  border: solid red 0px;
 }
-.Uselessweb-flex3a{
-  flex:1;
-  border:solid blue 0px;
-  text-align:center;
+
+.title {
+  flex: 1;
+  border: solid blue 0px;
+  text-align: center;
+  font-size: 150%;
+  padding-top: 5%;
+  font-weight: bold;
 }
-.navigation-flex3b{
-  flex:1;
-  border:solid red 0px;
+
+.buttonrow {
+  flex: 1;
+  border: solid red 0px;
 }
-.flex4{
-  display:flex;
-  height:100%;
-  flex-direction:row;
+
+.buttonrowflex {
+  display: flex;
+  height: 100%;
+  flex-direction: row;
 }
-.flex4a{
-  flex:1;
-  border: solid gold 5px;
-  margin:2px;
+
+.button1 {
+  flex: 1;
+  background-color: #81B29A;
+  border: solid #81B29A 5px;
+  margin: 2px;
+  transition: .5s;
+  cursor:pointer;
 }
-.flex4b{
-  flex:1;
-  border: solid gold 5px;
-  margin:2px;
+
+.button2 {
+  flex: 1;
+  background-color: #81B29A;
+  border: solid #81B29A 5px;
+  margin: 2px;
+  transition: .5s;
+  cursor:pointer;
+
+
 }
-.flex4c{
-  flex:1;
-  border: solid gold 5px;
-  margin:2px;
+
+.button3 {
+  flex: 1;
+  background-color: #81B29A;
+  border: solid #81B29A 5px;
+  margin: 2px;
+  transition: .5s;
+  cursor:pointer;
+
+
 }
-.flex4d{
-  flex:1;
-  border: solid gold 5px;
-  margin:2px;
+
+.button4 {
+  flex: 1;
+  background-color: #81B29A;
+  border: solid #81B29A 5px;
+  margin: 2px;
+  transition: .5s;
+  cursor:pointer;
+
+
 }
-.flex4e{
-  flex:1;
-  border: solid gold 5px;
-  margin:2px;
+
+.button5 {
+  flex: 1;
+  border: solid #81B29A 5px;
+  background-color: #81B29A;
+  margin: 2px;
+  transition: .5s;
+  cursor:pointer;
+
 }
-.body-flex5{
-  display:flex;
-  flex-direction:column;
+
+
+.bodyflex {
+  display: flex;
+  flex-direction: column;
   border: solid green 0px;
-  height:100%;
-}
-.Grayson-flex5a{
-  flex:1;
-  border:solid red 0px;
+  height: 100%;
 }
 
-.bodybody-flex5b{
-  flex:2;
-  border:solid yellow 0px;
+.Graysonrow {
+  flex: 2;
+  border: solid red 0px;
 }
-.Grayson-flex6{
+
+.homebodytext {
+  flex: 1;
+  border: solid yellow 0px;
+  font-size:120%;
+}
+
+.Graysonrowflex {
+  display: flex;
+  flex-direction: row;
+  border: solid gray 0px;
+  height: 100%;
+}
+
+.Graysonname {
+  flex: 2;
+  border: solid purple 0px;
+  padding-top: 5%;
+  font-size: 500%;
+  text-align: center;
+
+}
+
+.picture {
+  flex: 1;
+  border: solid #81B29A 0px;
+  background-image:url(images/fantastic.JPG);
+  cursor: pointer;
+  height:auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  background-size: 100%;
+  transition: 15s;
+} 
+
+.minihover:hover {
+  background: #6C9F8A;
+  flex:1.2;
+}
+/* <div class="ducknprompt">
+                    <div class="duckprompt"></div>
+                    <div class="duck"></div>
+                    <div class="inputnbutton">
+                        <div class="duckinput"></div>
+                        <div class="duckconfirm"
+                    </div>
+                </div> */
+
+/*DUCK TRANSLATOR----------------------------------*/
+.duckbody {
+  flex: 6;
+  border: solid blue 0px;
+  margin: 2px;
+  height:100%;
+}
+.ducknprompt{
+display: flex;
+flex-direction: column;
+border: solid red 0px;
+height:90%;
+margin:.5%;
+
+}
+.duckprompt{
+  flex:1;
+border: solid white 0px;
+margin:.5%;
+text-align: center;
+font-size: 150%;
+padding-top:1%;
+font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+/* autocorrect if you ever need to have some random font */
+
+}
+.duck{
+flex:3;
+border: solid rgb(201, 41, 41) 0px;
+margin:.5%;
+background-image: url(IMAGES/duck.png);
+background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  font-size: 150%;
+}
+.inputnbutton{
   display:flex;
   flex-direction:row;
-  border: solid gray 0px;
-  height:100%;
-}
-.Graysonname-flex6a{
-  flex:2;
-  border: solid purple 0px;
-  padding-top:5%;
-  font-size:200%;
-  text-align:center;
-}
-.Picture-flex6b{
   flex:1;
-  border:solid gold 2px;
+  margin:.5%;
+}
+.duckinput{
+flex:2;
+border: solid blue 0px;
+margin:.5%;
+height:fit-content;
+width:50%;
+
+}
+.duckconfirm{
+flex:1;
+border: solid purple 0px;
+margin:.5%;
+border:solid #F4A261 5px;
+background: #F4A261;
+  color: white;
+  text-align: center;
+  height: 50%;
+  width:50%;
+  border-radius: 100px;
+  padding-top:.5%;
+  font-size:25px;
+  cursor:pointer;
+
+
+}
+.duckconfirm:active{
+background-color: #E07A3F;
 }
 
-.minihover:hover{
-  background:lightyellow;
+
+
+
+/*TAG----------------------------------*/
+.tagbody {
+  flex: 6;
+  border: solid blue 0px;
+  margin: 2px;
+}
+
+.tagbot {
+  position: absolute;
+  top: 400px;
+  left: 600px;
+  border-radius: 200px;
+  height: 50px;
+  width: 50px;
+  padding: 5px;
+  background-image: url(IMAGES/neutral_face.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  transition: top .5s, left .5s;
+}
+
+/*DANCE----------------------------------*/
+.dancebody {
+
+  flex: 6;
+  border: solid blue 0px;
+  margin: 2px;
+}
+
+
+.dancecontainer{
+  display: flex;
+flex-direction: row;
+border: solid blue 0px;
+height:90%;
+margin:.5%;
+}
+.increasescore{
+  flex:1;
+  border: solid red 0px;
+height:90%;
+margin:.5%;
+place-content: center;
+font-size:15px;
+}
+
+.increasescorecontainer{
+  display:flex;
+  justify-content: center; 
+  align-items: center;     
+  flex-direction: column;
+  border: solid yellow 0px;
+  height:20%;
+  width:100%;
+}
+
+.increasescoreconfirm{
+  flex:1;
+  border: solid purple 0px;
+  margin:.5%;
+  place-content:center;
+  border: solid #F4A261 5px;
+  background: #F4A261;
+  color: white;
+  text-align: center;
+  height: 10%;
+  width:2;
+  border-radius: 100px;
+  padding-top:.5%;
+  font-size:20px;
+  cursor:pointer;
+  user-select: none;
+
+
+
+}
+.increasescoreconfirm:active{
+  flex:1;
+  border: solid purple 0px;
+  margin:.5%;
+  place-content:center;
+  border: solid #F4A261 5px;
+  background: #E07A3F;
+  color: white;
+  text-align: center;
+  height: 10%;
+  width:2;
+  border-radius: 100px;
+  padding-top:.5%;
+  font-size:20px;
+
+
+}
+
+
+
+
+.actuallyincreasescore{
+  flex:1;
+  border: solid green 0px;
+height:90%;
+margin:.5%;
+place-content: center;
+
+}
+
+
+
+.randobox{
+  flex:2;
+  border: solid rgb(255, 0, 212) 0px;
+height:90%;
+margin:.5%;
+}
+.dancescore{
+  flex:1;
+  border: solid red 0px;
+height:90%;
+margin:.5%;
+place-content: center;
+font-size:25px;
+
+}
+.themancontainer{
+  display: flex;
+  flex-direction: column;
+  border: solid blue 0px;
+  height:95%;
+  margin:.5%;
+}
+.theman{
+  flex:2;
+border: solid red 0px;
+height:90%;
+margin:.5%;
+background-image: url(napoleon/0.gif);
+background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+.dancebutton{
+  flex:1;
+border: solid purple 0px;
+margin:.5%;
+border: solid  #F4A261 5px;
+background: #F4A261;
+  color: white;
+  text-align: center;
+  height: 25%;
+  border-radius: 100px;
+  padding-top:1%;
+  font-size:100px;
+  box-shadow: 0 20px #999;
+  color:white;
+  cursor:pointer;
+  user-select: none;
+}
+.dancebutton:hover {
+  background-color: #E07A3F;
+  box-shadow: 0 15px #999;
+  transform: translateY(5px);
+
+}
+
+.dancebutton:active {
+  background-color: #E07A3F;
+  box-shadow: 0 5px #666;
+  transform: translateY(15px);
+}
+
+
+
+.taunt {
+  position: absolute;
+  top: 460px;
+  left: 580px;
+}
+
+.tagbot:hover {
+  border-radius: 50px;
+  /* transition: .75s; */
+  cursor: pointer;
+}
+
+/*PENGUINS----------------------------------*/
+.penguinbody {
+  flex: 6;
+  border: solid blue 0px;
+  margin: 2px;
+  font-family: arial, sans-serif;
+  line-height:2;
+  font-size:16px;
+  
+}
+.penguinflexcontainer {
+  display: flex;
+  flex-direction: column;
+  height: 2000px;
+  /* overflow-y: scroll; */
+}
+.pengrow1 {
+  flex: 1;
+  padding: 10px;
+  border: solid red 0px;
+
+}
+.pengrow2 {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+  border: solid yellow 0px;
+  
+}
+.pengrow3 {
+  flex: 1;
+  padding: 10px;
+  border: solid pink 0px;
+}
+
+.pengdivider1{
+  flex:1;
+  border: solid gray 0px;
+}
+.pengdivider2{
+  flex:1;
+  background-image:  url(IMAGES/penguin.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+
+}
+
+.penguinguy{
+  flex:1;
+  background-image:url(IMAGES/penguinshower.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+
+
+
+
+/*JAMMING----------------------------------*/
+.bouncebody {
+  flex: 6;
+  border: solid blue 0px;
+  margin: 2px;
+}
+
+.kermitdance {
+  position: absolute;
+  top: 400px;
+  left: 2000px;
+  animation: kermitstroll 20s linear infinite;
+}
+
+.grudance {
+  position: absolute;
+  top: -200px;
+  left: 300px;
+  animation: grustroll 12s linear infinite;
+}
+
+@keyframes grustroll {
+  0% {
+    top: -200px;
+  }
+
+  100% {
+    top: 1500px;
+  }
+}
+
+@keyframes kermitstroll {
+  0% {
+    left: 2000px;
+  }
+
+  100% {
+    left: -250px;
+  }
+}
+
+.songbutton {
+  border: solid #F4A261 2px;
+  position: absolute;
+  top: 300px;
+  left: 500px;
+  height: 100px;
+  width: 250px;
+  font-size: 150%;
+  background: #F4A261;
+  color: white;
+  text-align: center;
+  padding-top: 3%;
+  border-radius: 50px;
+  cursor:pointer;
+
+}
+
+.songbutton:hover {
+  background: #E07A3F
+}
+
+.songdash {
+  animation: spin 5s linear, dash 5s linear;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  20% {
+    transform: rotate(360deg);
+  }
+
+  50% {
+    transform: rotate(0deg);
+  }
+
+  70% {
+    transform: rotate(160deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes dash {
+  0% {
+    left: 500px;
+  }
+
+  65% {
+    left: 500px;
+  }
+
+  100% {
+    left: 2000px;
+  }
+
+}
+
+/*BOUNCYBALL*/
+.circle {
+  position: absolute;
+  top: 10px;
+  left: 200px;
+  height: 150px;
+  width: 150px;
+  object-fit: cover;
+  background: blue;
+  animation: bounce 0.5020833333s linear infinite, run 5s linear infinite, roll 2s linear infinite;
+  border-radius: 100px;
+  z-index: 150;
+}
+
+@keyframes run {
+  0% {
+    left: -200px;
+  }
+
+  100% {
+    left: 1500px;
+  }
+}
+
+@keyframes roll {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes bounce {
+  0% {
+    top: 220px;
+    background: #F4A261;
+    height: 150px;
+  }
+
+  5% {
+    top: 226px;
+    /* +6px */
+    background: #F4A261;
+    height: 150px;
+  }
+
+  10% {
+    top: 238px;
+    /* +12px */
+    background: #F4A261;
+    height: 150px;
+  }
+
+  15% {
+    top: 256px;
+    /* +18px */
+    background: #F4A261;
+    height: 150px;
+  }
+
+  20% {
+    top: 280px;
+    /* +24px */
+    background: #F4A261;
+    height: 150px;
+  }
+
+  25% {
+    top: 310px;
+    /* +30px */
+    background: #F4A261;
+    height: 150px;
+  }
+
+  30% {
+    top: 346px;
+    /* +36px */
+    background: #F4A261;
+    height: 150px;
+  }
+
+  35% {
+    top: 388px;
+    /* +42px */
+    background: #F4A261;
+    height: 150px;
+  }
+
+  40% {
+    top: 436px;
+    /* +48px */
+    background: #F4A261;
+    height: 150px;
+  }
+
+  45% {
+    top: 490px;
+    /* +54px */
+    background: #F4A261;
+    height: 150px;
+  }
+
+  50% {
+    top: 550px;
+    /* +60px */
+    background: #F4A261;
+    height: 150px;
+  }
+
+  55% {
+    top: 490px;
+    /* -60px */
+    background: #F4A261;
+    height: 150px;
+  }
+
+  60% {
+    top: 436px;
+    /* -54px */
+    background: #F4A261;
+    height: 150px;
+  }
+
+  65% {
+    top: 388px;
+    /* -48px */
+    background: #F4A261;
+    height: 150px;
+  }
+
+  70% {
+    top: 346px;
+    /* -42px */
+    background: #F4A261;
+    height: 150px;
+  }
+
+  75% {
+    top: 310px;
+    /* -36px */
+    background: #F4A261;
+    height: 150px;
+  }
+
+  80% {
+    top: 280px;
+    /* -30px */
+    background: #F4A261;
+    height: 150px;
+  }
+
+  85% {
+    top: 256px;
+    /* -24px */
+    background: #F4A261;
+    height: 150px;
+  }
+
+  90% {
+    top: 238px;
+    /* -18px */
+    background: #F4A261;
+    height: 150px;
+  }
+
+  95% {
+    top: 226px;
+    /* -12px */
+    background: #F4A261;
+    height: 150px;
+  }
+
+  100% {
+    top: 220px;
+    /* -6px */
+    background: #F4A261;
+    height: 150px;
+  }
 }
