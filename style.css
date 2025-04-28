@@ -333,7 +333,7 @@ background-color: #E07A3F;
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
-  transition: top .5s, left .5s;
+  transition: top .5s, left .5s, background-image .1s;
 }
 
 /*DANCE----------------------------------*/
@@ -454,6 +454,7 @@ background-image: url(napoleon/0.gif);
 background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
+transition: .01s
 }
 .dancebutton{
   flex:1;
@@ -554,6 +555,7 @@ background: #F4A261;
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
+  transition:.01s
 }
 
 
