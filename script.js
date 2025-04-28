@@ -39,6 +39,15 @@ function show(appear, button) {
     if (document.getElementById(button) !== document.getElementById('homebutton')) {
          document.getElementById(button).className = "buttonselected" }
 
+         //penguin preloader but not an actual preloader
+    if (document.getElementById('page3').style.display=='block'){
+        document.getElementById('penguinguy').style.backgroundImage = "url('images/penguinengry2.png')"
+        console.log('preloading...')
+        setTimeout(() => {
+            document.getElementById('penguinguy').style.backgroundImage = "url('images/penguinshower.png')"
+        }, 10);
+    }
+
     //this sucker is supposed to change the height of the window if penguins is selected.
     // if (document.getElementById(button) === document.getElementById('button3')) {
     //     document.getElementById('mainflex').style.height = 5000 + 'px'
@@ -61,7 +70,6 @@ function reseteverything() {
 
 
     document.documentElement.style.overflow = 'visible';
-
 
     song.currentTime = 0
     song.pause()
@@ -136,6 +144,8 @@ function submittranslate(){
      }
     document.getElementById('duckprompt').innerText = translation
 }
+
+
 
 
 
@@ -264,8 +274,11 @@ price *= 1.5
 
     
 
-
 }
+
+
+
+
 
 
 //PENGUINS
@@ -312,9 +325,18 @@ window.onscroll = pengscroll;
 //
 //
 //
-
+//
+//
+//
+//
+//
+//
+//
 
 //Surprise
+
+
+
 
 
 
@@ -337,11 +359,13 @@ function playsong() {
     setTimeout(postplay, 4500);
     setTimeout(showgru, 14000);
     document.documentElement.style.overflow = 'hidden'; // https://developer.mozilla.org/en-US/docs/Web/API/Document/documentElement
-
+    
 
 
     // setTimeout(20000)
     // document.getElementById('songbutton').className = 'hide;'
 
 
+
 }
+
